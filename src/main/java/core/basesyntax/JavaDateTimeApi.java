@@ -7,7 +7,6 @@ import java.time.OffsetDateTime;
 import java.util.Optional;
 
 public class JavaDateTimeApi {
-
     /**
      * Верните текущую дату в виде строки в зависимости от запроса.
      *
@@ -17,6 +16,7 @@ public class JavaDateTimeApi {
      *                 - YEAR - текущий год;
      *                 - MONTH - название текущего месяца;
      *                 - DAY - текущий день (число месяца);
+     *                 В любом другом случае бросить DateTimeException
      **/
     public String todayDate(DateTimePart datePart) {
         return "Today";
