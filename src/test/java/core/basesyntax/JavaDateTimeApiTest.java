@@ -114,7 +114,6 @@ public class JavaDateTimeApiTest {
         Assert.assertEquals(expectedResult2, actualResult2);
     }
 
-
     @Test
     public void offsetUkraine() {
         LocalDateTime localDateTime =
