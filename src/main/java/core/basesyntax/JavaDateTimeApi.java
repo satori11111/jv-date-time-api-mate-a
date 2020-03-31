@@ -78,12 +78,12 @@ public class JavaDateTimeApi {
     }
 
     /**
-     * Даны две временные зоны.
-     * Верните Optional часовой разницы между двумя временными зонами.
-     * @return Optional positive Integer
+     * Дана дата в строковом формате и временная зона.
+     * Верните LocalDateTime в этой временной зоне.
+     * @return LocalDateTime
      */
-    public Optional<Integer> diffBetweenZones(String firstZone, String secondZone) {
-        return Optional.empty();
+    public LocalDateTime getDateInSpecificTimeZone(String dateInString, String zone) {
+        return LocalDateTime.now();
     }
 
     /**

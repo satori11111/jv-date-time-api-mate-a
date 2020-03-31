@@ -102,6 +102,19 @@ public class JavaDateTimeApiTest {
     }
 
     @Test
+    public void getDateInSpecificTimeZone() {
+        LocalDateTime expectedResult1 = LocalDateTime.parse("2020-04-17T00:23:01");
+        LocalDateTime actualResult1 = javaDateTimeApi
+                .getDateInSpecificTimeZone("2020-04-16T15:23:01Z", "Asia/Tokyo");
+        Assert.assertEquals(expectedResult1, actualResult1);
+
+        LocalDateTime expectedResult2 = LocalDateTime.parse("2020-04-16T18:23:01");
+        LocalDateTime actualResult2 = javaDateTimeApi
+                .getDateInSpecificTimeZone("2020-04-16T15:23:01Z", "Europe/Athens");
+        Assert.assertEquals(expectedResult2, actualResult2);
+    }
+
+    @Test
     public void offsetUkraine() {
         LocalDateTime localDateTime =
                 LocalDateTime.of(2019, Month.SEPTEMBER, 06, 13, 17);
