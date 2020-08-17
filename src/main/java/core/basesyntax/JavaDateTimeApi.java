@@ -119,9 +119,8 @@ public class JavaDateTimeApi {
      * Даны произвольные время и дата.
      * Верните строку с датой и временем в формате
      * "день(2 цифры) месяц(полное название на английском) год(4 цифры) час(24 часа):минуты",
-     * например: "01 January 2000 18:00",
      */
     public String formatDate(LocalDateTime dateTime) {
-        return "Date can't be formatted!";
+        return "";
     }
 }
