@@ -50,3 +50,5 @@
     `day(2-digit) month(full name in English) year(4-digit) hours(24-hour format):minutes`.  
     
     Example: "01 January 2000 18:00".
+    
+[Try to avoid these common mistakes while solving task](https://mate-academy.github.io/jv-program-common-mistakes/java-core/java-eight-part-two/date-time-api)
